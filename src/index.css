@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #14263e;
+}
+
+::selection {
+  background-color: rgba(30, 58, 95, 0.15);
+}
+
+.mark-highlight-error {
+  background-color: rgba(231, 76, 60, 0.22);
+  border-bottom: 2px solid #e74c3c;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.mark-highlight-error:hover, .mark-highlight-error.active {
+  background-color: rgba(231, 76, 60, 0.38);
+}
+
+.mark-highlight-format {
+  background-color: rgba(243, 156, 18, 0.22);
+  border-bottom: 2px solid #f39c12;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.mark-highlight-format:hover, .mark-highlight-format.active {
+  background-color: rgba(243, 156, 18, 0.38);
+}
+
+.mark-highlight-question {
+  background-color: rgba(52, 152, 219, 0.22);
+  border-bottom: 2px solid #3498db;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.mark-highlight-question:hover, .mark-highlight-question.active {
+  background-color: rgba(52, 152, 219, 0.38);
+}
+
+.content-text {
+  font-family: 'Noto Serif SC', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: #182f4c;
+  text-align: justify;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #c9d4e3;
+  border-radius: 3px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #9bb0cb;
+}
